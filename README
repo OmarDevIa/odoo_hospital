@@ -1,0 +1,56 @@
+# 🏥 Odoo Hospital Management System
+
+Déploiement d’un système hospitalier complet basé sur **Odoo 17** (Community + Enterprise), avec module personnalisé `hospital4`, déployé sur Render via Docker.
+
+---
+
+## 🚀 Technologies utilisées
+
+- 🐍 Odoo 17 Community & Enterprise
+- 🐳 Docker & Dockerfile
+- 🐘 PostgreSQL 15
+- ☁️ Render (Web Service + DB)
+- 🛠️ Modules personnalisés : gestion patient, rendez-vous, personnel
+
+---
+
+## 📁 Architecture du projet
+
+
+---
+
+## 🌐 Accès à l’application
+
+🔗 [Lien Render déployé ici](https://ton-instance-hospital.render.com)
+
+---
+
+## ⚙️ Déploiement sur Render
+
+1. Connecter le dépôt GitHub à Render
+2. Configurer les variables d’environnement
+3. Render installe, compile et lance l’instance automatiquement
+
+---
+
+## 📦 Fonctionnalités du module `hospital4`
+
+- Gestion des patients
+- Fiches médicales
+- Rendez-vous hospitaliers
+- Affectation du personnel
+- Planning des interventions
+
+---
+
+## 🧠 Auteur
+
+👨‍💻 Développé par [Omar Atta Yakouba Maikassa](https://github.com/omardevia)  
+🎯 Objectif : Simplifier la gestion hospitalière avec un ERP accessible & modulaire
+
+---
+
+## 📜 Licence
+
+Ce projet est à usage éducatif et démonstratif. Pour utiliser Odoo Enterprise, une licence valide est requise.
+
