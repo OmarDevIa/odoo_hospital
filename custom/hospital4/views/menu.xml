@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+    <!-- Menu principal -->
+    <menuitem id="menu_hospital_root" name="Hospital" sequence="10"/>
+
+    <!-- Sous-menu principal (Gestion) -->
+    <menuitem id="menu_hospital_management"
+              name="Gestion Hôpital"
+              parent="menu_hospital_root"
+              sequence="20"/>
+
+    <!-- Action pour les Médecins -->
+    <record id="action_hospital_res_partner_doctor" model="ir.actions.act_window">
+        <field name="name">Médecins</field>
+        <field name="res_model">res.partner</field> <!-- Utilise res.partner hérité -->
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_doctor', '=', True)]</field> <!-- Filtrer uniquement les médecins -->
+    </record>
+
+    <!-- Action pour les Patients -->
+  <record id="action_hospital_res_partner_patient" model="ir.actions.act_window">
+        <field name="name">Patient</field>
+        <field name="res_model">res.partner</field> <!-- Utilise res.partner hérité -->
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_patient', '=', True)]</field> <!-- Filtrer uniquement les pats -->
+    </record>
+
+    <!-- Nouvelle Action pour les Contacts -->
+    <record id="action_hospital_contacts" model="ir.actions.act_window">
+        <field name="name">Contacts</field>
+        <field name="res_model">res.partner</field> <!-- Modèle des contacts -->
+        <field name="view_mode">tree,form</field> <!-- Vue liste et formulaire -->
+        <field name="domain">[]</field> <!-- Afficher tous les contacts -->
+    </record>
+
+    <!-- Sous-menu Patients -->
+    <menuitem id="menu_hospital_operations"
+              parent="menu_hospital_management"
+              action="action_hospital_res_partner_patient"
+              sequence="10"/>
+
+    <!-- Sous-menu Médecins -->
+    <menuitem id="menu_doctors_main"
+              name="Médecins"
+              parent="menu_hospital_management"
+              action="action_hospital_res_partner_doctor"
+              sequence="20"/>
+
+    <!-- Sous-menu pour les Contacts -->
+    <menuitem id="menu_hospital_contacts"
+              name="Contacts"
+              parent="menu_hospital_management"
+              action="action_hospital_contacts"
+              sequence="30"/>
+</data>
+</odoo>

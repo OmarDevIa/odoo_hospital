@@ -1,0 +1,37 @@
+    <odoo>
+        <record id="view_hospital_specialty_form" model="ir.ui.view">
+            <field name="name">hospital.specialty.form</field>
+            <field name="model">hospital.specialty</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hospital_specialty_tree" model="ir.ui.view">
+            <field name="name">hospital.specialty.tree</field>
+            <field name="model">hospital.specialty</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_hospital_specialty" model="ir.actions.act_window">
+            <field name="name">Spécialités</field>
+            <field name="res_model">hospital.specialty</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_hospital_specialty_root"
+                  name="Spécialités"
+                  parent="menu_hospital_root"
+                  action="action_hospital_specialty"
+                  sequence="40"/>
+    </odoo>

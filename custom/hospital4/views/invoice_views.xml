@@ -1,0 +1,43 @@
+    <odoo>
+      <!--  <record id="view_hospital_invoice_form" model="ir.ui.view">
+            <field name="name">hospital.invoice.form</field>
+            <field name="model">hospital.invoice</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="patient_id"/>
+                            <field name="appointment_id"/>
+                            <field name="amount"/>
+                            <field name="state"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hospital_invoice_tree" model="ir.ui.view">
+            <field name="name">hospital.invoice.tree</field>
+            <field name="model">hospital.invoice</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="patient_id"/>
+                    <field name="appointment_id"/>
+                    <field name="amount"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_hospital_invoice" model="ir.actions.act_window">
+            <field name="name">Factures</field>
+            <field name="res_model">hospital.invoice</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_hospital_invoice_root"
+                  name="Factures"
+                  parent="menu_hospital_root"
+                  action="action_hospital_invoice"
+                  sequence="30"/>-->
+    </odoo>

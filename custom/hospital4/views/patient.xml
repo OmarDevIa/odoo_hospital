@@ -1,0 +1,30 @@
+<odoo>
+    <!-- Ajouter un onglet Médecin dans la vue Formulaire -->
+    <record id="view_partner_form_inherit_patient" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.patient</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Patient">
+                    <group>
+                        <field name="is_patient"/>
+                        <field name="specialties_ids" widget="many2many_tags"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Ajouter la colonne Is Doctor dans la Vue Liste -->
+    <record id="view_partner_tree_inherit_patient" model="ir.ui.view">
+        <field name="name">res.partner.tree.inherit.patient</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <field name="is_patient"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
