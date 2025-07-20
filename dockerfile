@@ -16,6 +16,7 @@ COPY ./custom /mnt/custom
 # Définir les permissions
 RUN chown -R odoo:odoo /mnt/odoo /mnt/enterprise /mnt/custom /etc/odoo
 
+CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]
 
 
 USER odoo
