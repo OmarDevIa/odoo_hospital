@@ -15,3 +15,5 @@ services:
         value: dpg-d1pvh9c9c44c7392ov3g-a
       - key: PGPORT
         value: 5432
+        - key: PROXY_MODE
+          value: True
