@@ -12,7 +12,7 @@ RUN pip3 install --upgrade pip && \
 COPY ./odoo.conf /etc/odoo/odoo.conf
 COPY ./odoo /mnt/odoo
 COPY ./enterprise /mnt/enterprise
-COPY ./custom /mnt/custom
+COPY ./custom/hospital4 /mnt/custom/hospital4
 
 # Définir les permissions pour odoo
 RUN chown -R odoo:odoo /mnt/odoo /mnt/enterprise /mnt/custom /etc/odoo
