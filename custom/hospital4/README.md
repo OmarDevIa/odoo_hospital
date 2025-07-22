@@ -84,5 +84,5 @@ This module is licensed under LGPL-3.
 
 ## Author
 
-- Abhisha devi
+- Omar Atta 
 
