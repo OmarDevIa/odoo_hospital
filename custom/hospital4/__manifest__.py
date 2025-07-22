@@ -11,7 +11,7 @@
         'security/ir.model.access.csv',
         'views/menu.xml',
         'views/patient.xml',
-        'views/doctor.xml',  # Nouv fichier à créer
+        'views/docteur.xml',  # Nouv fichier à créer
         'views/res_partner_inherit.xml',
         'views/appointment_views.xml',
         'views/invoice_views.xml',
