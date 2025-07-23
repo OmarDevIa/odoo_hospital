@@ -6,7 +6,7 @@
     'description': 'A module for hospital management',  # Added description
     'category': 'Healthcare',
     'license': 'LGPL-3',      # Added license field
-    'depends': ['base','contacts','stock'],
+    'depends': ['base','contacts'],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
