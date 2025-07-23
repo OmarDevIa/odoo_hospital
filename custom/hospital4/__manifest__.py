@@ -1,5 +1,5 @@
 {
-    'name': 'EMS Hospital',
+    'name': 'Hospital4',
     'author': 'Omar Atta',
     'version': '17.0.1.0',    # Changed to match Odoo version format
     'summary': 'A module for hospital management',
